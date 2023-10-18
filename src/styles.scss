@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// MIXIN & ROOT
+@mixin flex ($flexDirection) {
+    display: flex;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
+
+$firstColor: azure;
+
+// MAIN-PAGE
+.show {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/videoGameBackground.jpg');
+    .contain {
+        .navbar {
+            @include flex (row);
+            justify-content: space-between;
+            .navbar-brand {
+                .logo {
+                    font-size: 2.4em;
+                    margin-left: 15px;
+                    color: $firstColor;
+                    font-family: ursula;
+                    text-shadow: 0px 0px 4px rgba(166,0,0,0.99);
+                }
+            }
+            #btnBars {
+                display: none;
+                font-size: 1.3em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 180px;
+                margin-right: 20px;
+                .nav-item {
+                    .nav-link {
+                        margin-left: 90px;
+                        font-size: 1.4em;
+                        color: $firstColor;
+                        font-family: aeros;
+                        text-shadow: 2px 0px 4px #000000;
+                    }
+                }
+            }
+        }
+        .listMachine {
+          margin-top: 847px;
+            text-align: center;
+            .row {
+                .console {
+                    padding: 0px;
+                    .img-fluid {
+                        cursor: pointer;
+                        opacity: 1.0;
+                        padding: 0px;
+                        height: 170px;
+                        &:hover {
+                            opacity: 0.75;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
+
+// SHOW-CONSOLE
+.universConsole {
+    height: auto;
+    .contain {
+        .navbar {
+            @include flex (row);
+            justify-content: space-between;
+            .navbar-brand {
+                .logo {
+                    font-size: 2.4em;
+                    margin-left: 15px;
+                    color: $firstColor;
+                    font-family: ursula;
+                    text-shadow: 0px 0px 4px rgba(166,0,0,0.99);
+                }
+            }
+            #btnBars {
+                display: none;
+                font-size: 1.3em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                margin-right: 20px;
+                .nav-item {
+                    .nav-link {
+                        margin-left: 90px;
+                        font-size: 1.4em;
+                        font-family: aeros;
+                        color: $firstColor;
+                        text-shadow: 2px 0px 4px #000000;
+                    }
+                }
+            }
+        }
+        .showConsole {
+            margin: 30px auto;
+            .row {
+                text-align: center;
+                .console {
+                    @include flex (column);
+                    .img-fluid {
+                        height: 650px;
+                        max-width: 500px;
+                    }
+                    .nameConsole {
+                        margin-top: 15px;
+                        font-weight: bold;
+                        font-size: 2.0em;
+                        color: $firstColor;
+                    }
+                    #btnBuy {
+                        margin-top: 2px;
+                        padding: 5px;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        .hrefBuy {
+                            font-family: aeros;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            color: $firstColor;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .describeConsole {
+            padding: 20px;
+            .row {
+                margin-top: 20px;
+                text-align: center;
+                .marketing {
+                    .caractere {
+                        margin-top: 12px;
+                        .features {
+                        font-family: aeros;
+                        font-size: 1.5em;
+                        color: $firstColor;
+                        }
+                        .describe {
+                            margin-top: 20px;
+                            font-size: 1.1em;
+                            color: $firstColor;
+                        }
+                    }
+                    .strong {
+                        font-family: aeros;
+                        font-size: 1.5em;
+                        color: $firstColor;
+                    }
+                    .list {
+                        line-height: 45px;
+                        .row {
+                            .points {
+                                .listStrong, .listWeak {
+                                    overflow: auto;
+                                    max-height: 140px;
+                                    @include flex (column);
+                                    .positif, .négatif {
+                                        color: $firstColor;
+                                        font-size: 1.1em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gamesExclusives {
+            margin-top: 30px;
+            text-align: center;
+            .exclusif {
+                letter-spacing: 2px;
+                font-size: 1.4em;
+                font-weight: bold;
+                color: $firstColor;
+                margin-bottom: 14px;
+                font-family: aeros;
+            }
+            .row {
+                align-items: center;
+                justify-content: center;
+                margin: 10px auto;
+                .game {
+                    max-width: 250px;
+                    .img-fluid {
+                        cursor: pointer;
+                        height: 300px;
+                    }
+                }
+            }
+            #btnSeeGames {
+                margin-top: 10px;
+                padding: 5px;
+                margin-bottom: 30px;
+                background: transparent;
+                border: 1px solid $firstColor;
+                .hrefGames {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// SIDECANVAS
+#sideCanvas {
+    max-width: 180px;
+    height: 165px;
+    border: 1px solid $firstColor;
+    border-radius: 0px 0px 0px 40px;
+    .offcanvas-body {
+        border: 1px solid $firstColor;
+        background-color: black;
+        border-radius: 0px 0px 0px 40px;
+        #btnCloseCanvas {
+            position: relative;
+            top: -6px;
+            left: 82%;
+            font-size: 1.4em;
+            color: darkred;
+            border: transparent;
+            background: transparent;
+        }
+        .navbar {
+            margin-left: 0px;
+            margin-top: -14px;
+            .navbar-nav {
+                line-height: 25px;
+                text-align: center;
+                .nav-item {
+                    .nav-link {
+                        font-family: aeros;
+                        font-size: 0.9em;
+                        color: $firstColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FONTS
+@font-face {
+    font-family: ursula;
+    src: url('/assets/fonts/ursula.ttf');
+}
+
+@font-face {
+    font-family: aeros;
+    src: url('/assets/fonts/aeros.ttf');
+}
+
+// MEDIA-QUERRY
+@media screen and (max-width: 1440px) {
+    .show {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .universConsole {
+        .contain {
+            .showConsole {
+                .row {
+                    .console {
+                        .img-fluid {
+                            height: 300px;
+                            max-width: 450px;
+                        }
+                    }
+                }
+            }
+            .describeConsole {
+                margin: -20px auto;
+                .row {
+                    .marketing {
+                        .caractere {
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .show {
+        .contain {
+            .navbar {
+                #btnBars {
+                    display: block;
+                    margin-right: 10px;
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+            .listMachine {
+                margin-top: 770px;
+            }
+        }
+    }
+    .universConsole {
+        .contain {
+            .navbar {
+                #btnBars {
+                    display: block;
+                    margin-right: 10px;
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+            .showConsole {
+                .row {
+                    .console {
+                        margin: 40px auto;
+                    }
+                }
+            }
+            .describeConsole {
+                margin-top: -85px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .universConsole {
+        .contain {
+            .showConsole {
+                .row {
+                    .console {
+                        .img-fluid {
+                            height: 375px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+            .gamesExclusives {
+                .row {
+                    .game {
+                        margin: 15px auto;
+                    }
+                }
+                #btnSeeGames {
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .universConsole {
+        .contain {
+            .showConsole {
+                .row {
+                    .console {
+                        .nameConsole {
+                            font-size: 1.6em;
+                        }
+                    }
+                }
+            }
+            .describeConsole {
+                .row {
+                    .marketing {
+                        .caractere {
+                            .features {
+                                font-size: 1.2em;
+                            }
+                        }
+                        .strong {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .show {
+        width: 104%;
+        .contain {
+            .navbar {
+                .navbar-brand {
+                    .logo {
+                        font-size: 1.8em;
+                    }
+                }
+                #btnBars {
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+    .universConsole {
+        .contain {
+            .navbar {
+                .navbar-brand {
+                    .logo {
+                        font-size: 1.8em;
+                    }
+                }
+                #btnBars {
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}

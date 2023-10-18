@@ -1,0 +1,336 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+.show {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/videoGameBackground.jpg");
+}
+.show .contain .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.show .contain .navbar .navbar-brand .logo {
+  font-size: 2.4em;
+  margin-left: 15px;
+  color: azure;
+  font-family: ursula;
+  text-shadow: 0px 0px 4px rgba(166, 0, 0, 0.99);
+}
+.show .contain .navbar #btnBars {
+  display: none;
+  font-size: 1.3em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.show .contain .navbar .navbar-nav {
+  -moz-column-gap: 180px;
+       column-gap: 180px;
+  margin-right: 20px;
+}
+.show .contain .navbar .navbar-nav .nav-item .nav-link {
+  margin-left: 90px;
+  font-size: 1.4em;
+  color: azure;
+  font-family: aeros;
+  text-shadow: 2px 0px 4px #000000;
+}
+.show .contain .listMachine {
+  margin-top: 847px;
+  text-align: center;
+}
+.show .contain .listMachine .row .console {
+  padding: 0px;
+}
+.show .contain .listMachine .row .console .img-fluid {
+  cursor: pointer;
+  opacity: 1;
+  padding: 0px;
+  height: 170px;
+}
+.show .contain .listMachine .row .console .img-fluid:hover {
+  opacity: 0.75;
+}
+
+.universConsole {
+  height: auto;
+}
+.universConsole .contain .navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.universConsole .contain .navbar .navbar-brand .logo {
+  font-size: 2.4em;
+  margin-left: 15px;
+  color: azure;
+  font-family: ursula;
+  text-shadow: 0px 0px 4px rgba(166, 0, 0, 0.99);
+}
+.universConsole .contain .navbar #btnBars {
+  display: none;
+  font-size: 1.3em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.universConsole .contain .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 20px;
+}
+.universConsole .contain .navbar .navbar-nav .nav-item .nav-link {
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: aeros;
+  color: azure;
+  text-shadow: 2px 0px 4px #000000;
+}
+.universConsole .contain .showConsole {
+  margin: 30px auto;
+}
+.universConsole .contain .showConsole .row {
+  text-align: center;
+}
+.universConsole .contain .showConsole .row .console {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.universConsole .contain .showConsole .row .console .img-fluid {
+  height: 650px;
+  max-width: 500px;
+}
+.universConsole .contain .showConsole .row .console .nameConsole {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 2em;
+  color: azure;
+}
+.universConsole .contain .showConsole .row .console #btnBuy {
+  margin-top: 2px;
+  padding: 5px;
+  background: transparent;
+  border: 1px solid azure;
+}
+.universConsole .contain .showConsole .row .console #btnBuy .hrefBuy {
+  font-family: aeros;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+}
+.universConsole .contain .describeConsole {
+  padding: 20px;
+}
+.universConsole .contain .describeConsole .row {
+  margin-top: 20px;
+  text-align: center;
+}
+.universConsole .contain .describeConsole .row .marketing .caractere {
+  margin-top: 12px;
+}
+.universConsole .contain .describeConsole .row .marketing .caractere .features {
+  font-family: aeros;
+  font-size: 1.5em;
+  color: azure;
+}
+.universConsole .contain .describeConsole .row .marketing .caractere .describe {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: azure;
+}
+.universConsole .contain .describeConsole .row .marketing .strong {
+  font-family: aeros;
+  font-size: 1.5em;
+  color: azure;
+}
+.universConsole .contain .describeConsole .row .marketing .list {
+  line-height: 45px;
+}
+.universConsole .contain .describeConsole .row .marketing .list .row .points .listStrong, .universConsole .contain .describeConsole .row .marketing .list .row .points .listWeak {
+  overflow: auto;
+  max-height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.universConsole .contain .describeConsole .row .marketing .list .row .points .listStrong .positif, .universConsole .contain .describeConsole .row .marketing .list .row .points .listStrong .négatif, .universConsole .contain .describeConsole .row .marketing .list .row .points .listWeak .positif, .universConsole .contain .describeConsole .row .marketing .list .row .points .listWeak .négatif {
+  color: azure;
+  font-size: 1.1em;
+}
+.universConsole .contain .gamesExclusives {
+  margin-top: 30px;
+  text-align: center;
+}
+.universConsole .contain .gamesExclusives .exclusif {
+  letter-spacing: 2px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  margin-bottom: 14px;
+  font-family: aeros;
+}
+.universConsole .contain .gamesExclusives .row {
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+.universConsole .contain .gamesExclusives .row .game {
+  max-width: 250px;
+}
+.universConsole .contain .gamesExclusives .row .game .img-fluid {
+  cursor: pointer;
+  height: 300px;
+}
+.universConsole .contain .gamesExclusives #btnSeeGames {
+  margin-top: 10px;
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: 1px solid azure;
+}
+.universConsole .contain .gamesExclusives #btnSeeGames .hrefGames {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+}
+
+#sideCanvas {
+  max-width: 180px;
+  height: 165px;
+  border: 1px solid azure;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideCanvas .offcanvas-body {
+  border: 1px solid azure;
+  background-color: black;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideCanvas .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -6px;
+  left: 82%;
+  font-size: 1.4em;
+  color: darkred;
+  border: transparent;
+  background: transparent;
+}
+#sideCanvas .offcanvas-body .navbar {
+  margin-left: 0px;
+  margin-top: -14px;
+}
+#sideCanvas .offcanvas-body .navbar .navbar-nav {
+  line-height: 25px;
+  text-align: center;
+}
+#sideCanvas .offcanvas-body .navbar .navbar-nav .nav-item .nav-link {
+  font-family: aeros;
+  font-size: 0.9em;
+  color: azure;
+}
+
+@font-face {
+  font-family: ursula;
+  src: url("/assets/fonts/ursula.ttf");
+}
+@font-face {
+  font-family: aeros;
+  src: url("/assets/fonts/aeros.ttf");
+}
+@media screen and (max-width: 1440px) {
+  .show {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .universConsole .contain .showConsole .row .console .img-fluid {
+    height: 300px;
+    max-width: 450px;
+  }
+  .universConsole .contain .describeConsole {
+    margin: -20px auto;
+  }
+  .universConsole .contain .describeConsole .row .marketing .caractere {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .show .contain .navbar #btnBars {
+    display: block;
+    margin-right: 10px;
+  }
+  .show .contain .navbar .navbar-nav {
+    display: none;
+  }
+  .show .contain .listMachine {
+    margin-top: 770px;
+  }
+  .universConsole .contain .navbar #btnBars {
+    display: block;
+    margin-right: 10px;
+  }
+  .universConsole .contain .navbar .navbar-nav {
+    display: none;
+  }
+  .universConsole .contain .showConsole .row .console {
+    margin: 40px auto;
+  }
+  .universConsole .contain .describeConsole {
+    margin-top: -85px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .universConsole .contain .showConsole .row .console .img-fluid {
+    height: 375px;
+    max-width: 350px;
+  }
+  .universConsole .contain .gamesExclusives .row .game {
+    margin: 15px auto;
+  }
+  .universConsole .contain .gamesExclusives #btnSeeGames {
+    margin-top: -10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .universConsole .contain .showConsole .row .console .nameConsole {
+    font-size: 1.6em;
+  }
+  .universConsole .contain .describeConsole .row .marketing .caractere .features {
+    font-size: 1.2em;
+  }
+  .universConsole .contain .describeConsole .row .marketing .strong {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .show {
+    width: 104%;
+  }
+  .show .contain .navbar .navbar-brand .logo {
+    font-size: 1.8em;
+  }
+  .show .contain .navbar #btnBars {
+    margin-top: -15px;
+  }
+  .universConsole .contain .navbar .navbar-brand .logo {
+    font-size: 1.8em;
+  }
+  .universConsole .contain .navbar #btnBars {
+    margin-top: -15px;
+  }
+}/*# sourceMappingURL=styles.css.map */
